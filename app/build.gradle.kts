@@ -44,7 +44,7 @@ application {
     // Define the main class for the application.
     mainClass = "com.hugojuarez.flightlink.Main"
     applicationDefaultJvmArgs = listOf(
-        "--enable-native-access=javafx.graphics"
+        "--enable-native-access=javafx.graphics,ALL-UNNAMED"
     )
 }
 
