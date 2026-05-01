@@ -8,11 +8,18 @@ public class MainController {
     @FXML
     private Label commPort;
 
+    @FXML
+    private Label message;
+
     private final SerialManager serial =  SerialManager.getInstance();
 
     @FXML
     public void initialize() {
-        commPort.setText(serial.getPort().toString());
+        if( serial.connect(9600) ) {
+            commPort.setText(serial.getPort());
+        } else {
+            commPort.setText("Cannot connect");
+        }
     }
 
 }

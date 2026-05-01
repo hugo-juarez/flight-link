@@ -3,6 +3,7 @@
  */
 package com.hugojuarez.flightlink;
 
+import com.hugojuarez.flightlink.communication.SerialManager;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -20,6 +21,12 @@ public class Main extends Application {
         stage.setTitle("Hello World");
         stage.show();
         stage.centerOnScreen();
+    }
+
+    @Override
+    public void stop() throws Exception {
+        super.stop();
+        SerialManager.getInstance().disconnect();
     }
 
     public static void changeMainView() throws IOException {
