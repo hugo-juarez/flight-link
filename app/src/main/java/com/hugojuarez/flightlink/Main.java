@@ -19,6 +19,7 @@ public class Main extends Application {
         stage.setScene(scene);
         stage.setTitle("Hello World");
         stage.show();
+        stage.centerOnScreen();
     }
 
     public static void changeMainView() throws IOException {
