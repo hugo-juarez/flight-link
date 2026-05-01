@@ -4,12 +4,9 @@ import com.hugojuarez.flightlink.Main;
 import com.hugojuarez.flightlink.communication.SerialManager;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.scene.control.ChoiceBox;
 import com.fazecast.jSerialComm.SerialPort;
-
 import java.io.IOException;
-import java.util.Arrays;
 
 public class SelectionController {
     @FXML
