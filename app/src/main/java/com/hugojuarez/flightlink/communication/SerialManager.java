@@ -16,6 +16,10 @@ public class SerialManager {
         this.port = port;
     }
 
+    public SerialPort getPort() {
+        return port;
+    }
+
     public boolean connect(int baud) {
         port.setBaudRate(baud);
         return port.openPort();

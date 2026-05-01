@@ -13,7 +13,7 @@ import java.util.Arrays;
 
 public class SelectionController {
     @FXML
-    public ChoiceBox<SerialPort> portsChoiceBox;
+    private ChoiceBox<SerialPort> portsChoiceBox;
 
     private final SerialManager serial = SerialManager.getInstance();
 
